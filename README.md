@@ -101,31 +101,30 @@ You should be able to create the column and populated it with values in a single
 
 
 # 12. Extracting height: centimeters  
-Create a new column called `HEIGHTcm` and populate it with `NA` values.  
-Extract the height of each respondent recorded in centimeters from the `HEIGHT3` column conditionally--only if `brtri$HEIGHT3>=9061 & brtri$HEIGHT3<=9998`.  
-Use conditional methods with logical indexing and the `substr()` function to populate with the correct digits from the `HEIGHT3` column.  
-Remember that the last three digits of the `HEIGHT3` column represent respondent height in centimeters if the leading digit is a '9'.  
-When subsetting columns, `NA` values are not allowed, so remember to include `!is.na(brtri$HEIGHT3)` in the logical indexing.  
+1. Create a new column called `HEIGHTcm` and populate it with `NA` values.  
+2. Extract the height of each respondent recorded in centimeters from the `HEIGHT3` column conditionally--only if `brtri$HEIGHT3>=9061 & brtri$HEIGHT3<=9998`.  
+3. Use conditional methods with logical indexing and the `substr()` function to populate with the correct digits from the `HEIGHT3` column.
+   Remember that the last three digits of the `HEIGHT3` column represent respondent height in centimeters if the leading digit is a '9'.  
+5. When subsetting columns, `NA` values are not allowed, so remember to include `!is.na(brtri$HEIGHT3)` in the logical indexing.  
 
 
 # 13. Transforming height: total centimeters  
-Create a new column called `HEIGHTtotcm` by simply copying the column `brtri$HEIGHTcm`.  
-This new column `HEIGHTtotcm` will hold the height of each respondent in centimeters.  
-For rows with height recorded in inches, we will convert from inches to centimeters and populate `HEIGHTtotcm` with converted values.  
-
-Use the `round()` function to round to the nearest whole centimeter.  
+1. Create a new column called `HEIGHTtotcm` by simply copying the column `brtri$HEIGHTcm`.
+   This new column `HEIGHTtotcm` will hold the height of each respondent in centimeters.
+   For rows with height recorded in inches, we will convert from inches to centimeters and populate `HEIGHTtotcm` with converted values.  
+2. Use the `round()` function to round to the nearest whole centimeter.  
 
 View the documentation for `round()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/Round)  
 
 
 # 14. Transforming height: total meters  
-Create a new column called `HEIGHTtotm` by simply converting the column `brtri$HEIGHTtotcm` to meters.  
-Use the `round()` function to round values to four decimal places.  
+1. Create a new column called `HEIGHTtotm` by simply converting the column `brtri$HEIGHTtotcm` to meters.  
+2. Use the `round()` function to round values to four decimal places.  
 
 
 # 15. Transforming height: total centimeters to total inches  
-Create a new column called `HEIGHTtotin` by simply converting the column `brtri$HEIGHTtotcm` to inches.  
-Use the `round()` function to round values to the nearest whole inch.  
+1. Create a new column called `HEIGHTtotin` by simply converting the column `brtri$HEIGHTtotcm` to inches.  
+2. Use the `round()` function to round values to the nearest whole inch.  
 
 
 # 16. Respondent Sex: Creating a factor  
@@ -145,10 +144,10 @@ Question:  Sex of Respondent
 | 2 | Female: Code=2 if LANDSEX3=2 or CELLSEX3=2 | 240,183 | 52.48 | 50.88 |  
 
 
-Create a new variable `SEX` and populate it with empty values ("").  
-Use conditional logic and indexing to code the value of `SEX` for all rows where `SEXVAR==1` as 'Male'.  
-Use conditional logic and indexing to code the value of `SEX` for all rows where `SEXVAR==2` as 'Female'.  
-Use the `factor()` function to convert `brtri$SEX` to a factor.  
+1. Create a new variable `SEX` and populate it with empty values ("").
+2. Use conditional logic and indexing to code the value of `SEX` for all rows where `SEXVAR==1` as 'Male'.  
+3. Use conditional logic and indexing to code the value of `SEX` for all rows where `SEXVAR==2` as 'Female'.  
+4. Use the `factor()` function to convert `brtri$SEX` to a factor.  
 
 View the documentation for `factor()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/factor)  
 
@@ -197,21 +196,21 @@ What range of values within the column `WEIGHT2` are recorded in kilograms?
 
 
 # 21. Extracting weight: pounds  
-Create a new column called `WEIGHTlb` and populate it with `NA` values.  
-Extract the weight of each respondent recorded in pounds from the `WEIGHT2` column conditionally--only if `brtri$WEIGHT2>=50 & brtri$WEIGHT2<=776`.  
-Use conditional methods with logical indexing and the `substr()` function to populate with the correct digits from the `WEIGHT2` column.  
+1. Create a new column called `WEIGHTlb` and populate it with `NA` values.  
+2. Extract the weight of each respondent recorded in pounds from the `WEIGHT2` column conditionally--only if `brtri$WEIGHT2>=50 & brtri$WEIGHT2<=776`.  
+3. Use conditional methods with logical indexing and the `substr()` function to populate with the correct digits from the `WEIGHT2` column.  
 Remember that the last three digits of the `WEIGHT2` column represent respondent weight in kilograms if the leading digit is a '9'.  
-Convert values to pounds where necessary.  
+4. Convert values to pounds where necessary.  
 
 When subsetting columns, `NA` values are not allowed, so remember to include `!is.na(brtri$WEIGHT2)` in the logical indexing.  
 
 
 # 22. Extracting weight: kilograms  
-Create a new column called `WEIGHTkg` and populate it with `NA` values.  
-Extract the weight of each respondent recorded in kilograms from the `WEIGHT2` column conditionally--only if `brtri$WEIGHT2>=9023 & brtri$WEIGHT2<=9352`.  
-Use conditional methods with logical indexing and the `substr()` function to populate with the correct digits from the `WEIGHT2` column.  
+1. Create a new column called `WEIGHTkg` and populate it with `NA` values.  
+2. Extract the weight of each respondent recorded in kilograms from the `WEIGHT2` column conditionally--only if `brtri$WEIGHT2>=9023 & brtri$WEIGHT2<=9352`.  
+3. Use conditional methods with logical indexing and the `substr()` function to populate with the correct digits from the `WEIGHT2` column.  
 Remember that the last three digits of the `WEIGHT2` column represent respondent height in centimeters if the leading digit is a '9'.  
-Convert values to kilograms where necessary.  
+4. Convert values to kilograms where necessary.  
 
 When subsetting columns, `NA` values are not allowed, so remember to include `!is.na(brtri$WEIGHT2)` in the logical indexing.  
 
