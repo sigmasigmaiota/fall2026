@@ -1,3 +1,9 @@
+# Installing R  
+View the documentation and install R by clicking [**here.**](https://www.r-project.org/)  
+
+# Installing RStudio
+View the documentation and install RStudio by clicking [**here.**](https://posit.co/downloads)  
+
 # A brief introduction to R packages  
 Packages are curated collections of functions and/or compiled code for use in R. Some commonly-downloaded, popular packages include sample data and documentation to explain and demonstrate implementation.  
 Packages can be downloaded from the Comprehensive R Archive Network (CRAN), the primary repository for R packages. Each package submitted to CRAN is reviewed and tested thoroughly before release. Every package is released with a version number, and the most popular packages are frequently updated and released with a new version number.  
@@ -6,7 +12,6 @@ CRAN is a trusted source for up-to-date, consistent versions of R packages, and 
 
 # 1. Using `install.packages()`  
 One of the most useful packages in R is `tidyverse`.  
-Install `tidyverse` by typing `install.packages('tidyverse')` in the code chunk below.  
 The `install.packages()` function is the easiest method to download packages from CRAN.  
 View the documentation for `install.packages()` by clicking [**here.**](https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/install.packages)  
 
@@ -15,43 +20,34 @@ View the documentation for `install.packages()` by clicking [**here.**](https://
 Once the package is downloaded, the package must be called into virtual memory before it is used. In order to use the package, call it into virtual memory with the `library()` command.  
 When downloading packages, the package name must be in quotation marks. When called into virtual memory with the `library()` command, no quotation marks are needed.  
 
-Put the `tidyverse` package into virtual memory by typing `library(tidyverse)` in the code chunk below.  
-
 
 # 3. Viewing package version with `packageVersion()`  
 In an R Markdown document, you can begin a new code chunk by adding three tick marks followed by a lower case r enclosed in curly brackets: ` ```{r} `  
 
-You can close the code chunk with three tick marks: ` ``` `.  
-
-Create a code chunk below and find the package version of tidyverse you've just downloaded by using the `packageVersion()` function.  
+Close the code chunk by typing three tick marks: ` ``` `.  
 View the documentation for `packageVersion()` by clicking [**here.**](https://www.rdocumentation.org/packages/Biobase/versions/2.32.0/topics/package.version)  
 
 
 # 4. Importing a .csv file with `read.csv`  
-Read the .csv file titled `brfss2024tri.csv` into a dataframe with the `read.csv()` function. Name the resulting dataframe `brtri`.  
 Hint: include the file path when reading the file, and remember to either double backslashes (`\`) or use forward slashes (`/`) in the file path.  
 View the documentation for `read.csv()` by clicking [**here.**](https://www.rdocumentation.org/packages/COVID19/versions/2.0.3/topics/read.csv)  
 
 
 # 5. The `colnames()` function  
-View the column names in the `brtri` dataframe with the `colnames()` function in the code chunk below.  
 How many columns are in the dataframe?  
 View the documentation for `colnames()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/row+colnames)  
 View additional methods for retrieving column names and details by clicking [**here.**](https://www.r-bloggers.com/2024/10/mastering-column-names-in-base-r-a-beginners-guide/)  
 
 
 # 6. Using `sapply()` to view column type  
-View the class of each column in the `brtri` dataframe by implementing the `sapply()` function with the `class()` function in the code chunk below.  
 View the documentation for `sapply()` by clicking [**here.**](https://www.rdocumentation.org/packages/functools/versions/0.2.0/topics/Sapply)  
 
 
 # 7. The `table()` function  
-Use the `table()` function to view the frequencies of the `STATE` column in the `brtri` dataframe in the code chunk below. Use the parameter `useNA` to view the number of rows with missing data.  
 View the documentation for `table()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/table)  
 
 
 # 8. Viewing the number of rows with `nrow()`  
-Use the `nrow()` function to view the number of rows in the `brtri` dataframe in the code chunk below.  
 View the documentation for `nrow()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/nrow)  
 
 
@@ -78,7 +74,6 @@ Question:  About how tall are you without shoes?  (If respondent answers in metr
 | BLANK | Not asked or Missing | 13,400 | | |  
   
   
-Use the `table()` function to get a frequency table of the data in the `HEIGHT3` column in the code chunk below.  
 Given the information in the table above, what range of values would you say are in feet and inches in column `HEIGHT3`?  
 What range of values would you say are in centimeters?  
 View the documentation for `table()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/table)  
@@ -95,10 +90,6 @@ We will accomplish this step by step:
 1. Where height is recorded in feet and inches, for example '511', we'11 separate values of feet and values of inches into separate `HEIGHTft` and `HEIGHTin` columns.
 2. Where height is measured in centimeters, for example '9170', we will need to extract the last three digits--the values following the leading'9'--and store as values of centimeters in a separate `HEIGHTcm` column.
 3. After we have three new columns (`HEIGHTft`, `HEIGHTin`, `HEIGHTcm`), we can convert values conditionally by row until each respondent has height recorded in inches and centimeters.  
-
-Extract the 'foot' (the first digit) and 'inch' (the last two digits) components of each respondent's height from the `HEIGHT3` column conditionally--only if `brtri$HEIGHT3>=200 & brtri$HEIGHT3<=711`.  
-Use conditional methods with logical indexing and the `substr()` function to create `brtri$HEIGHTft` and `brtri$HEIGHTin` columns and populate with the correct digits from the `HEIGHT3` column.  
-When subsetting columns, `NA` values are not allowed, so remember to include `!is.na(brtri$HEIGHT3)` in the logical indexing.  
 
 You can use Stack Overflow as a resource on conditional methods with logical indexing by clicking [**here.**](https://stackoverflow.com/questions/13871614/replacing-values-from-a-column-using-a-condition-in-r)  
 View the documentation for `substr()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/substr)  
@@ -163,10 +154,6 @@ View the documentation for `factor()` by clicking [**here.**](https://www.rdocum
 
 
 # 17. Plotting an histogram of (unweighted) height stratified by sex  
-Use the code chunk below to plot a histogram of respondent height in meters stratified by sex using `ggplot` and `geom_histogram`.  
-Use the resources in the hyperlinks below.  
-In particular, view the code in the R code gallery.  
-
 View the documentation for `ggplot()` by clicking [**here.**](https://www.rdocumentation.org/packages/ggplot2/versions/0.9.0/topics/ggplot)  
 View the documentation for `geom_histogram()` by clicking [**here.**](https://www.rdocumentation.org/packages/ggplot2/versions/0.9.1/topics/geom_histogram)  
 View a gallery of R code and histograms with several groups by clicking [**here.**](https://r-graph-gallery.com/histogram_several_group.html)  
@@ -205,7 +192,6 @@ Question:  About how much do you weigh without shoes?  (If respondent answers in
 | BLANK | Not asked or Missing | 12,333 | | |  
 
 
-Use the `table()` function to get a frequency table of the data in the `WEIGHT2` column in the code chunk below.  
 Given the information in the table above, what range of values would you say are in pounds in column `WEIGHT2`?  
 What range of values within the column `WEIGHT2` are recorded in kilograms?  
 
