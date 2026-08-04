@@ -7,8 +7,10 @@ View the documentation and install RStudio by clicking [**here.**](https://posit
 # A brief introduction to R packages  
 Packages are curated collections of functions and/or compiled code for use in R. Some commonly-downloaded, popular packages include sample data and documentation to explain and demonstrate implementation.  
 Packages can be downloaded from the Comprehensive R Archive Network (CRAN), the primary repository for R packages. Each package submitted to CRAN is reviewed and tested thoroughly before release. Every package is released with a version number, and the most popular packages are frequently updated and released with a new version number.  
+
 CRAN is a trusted source for up-to-date, consistent versions of R packages, and allows package accessibility across multiple servers in multiple regions called 'mirrors'. Packages can also be downloaded through GitHub, but we'll get to that later.  
-View the cheat sheets for `tidyverse` pacakges by clicking [**here.**](https://rstudio.github.io/cheatsheets/)
+
+View the cheat sheets for `tidyverse` packages by clicking [**here.**](https://rstudio.github.io/cheatsheets/)
 
 # 1. Using `install.packages()`  
 
