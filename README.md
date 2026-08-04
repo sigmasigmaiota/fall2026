@@ -1,4 +1,6 @@
-# ![](/.png "")Assignment 1: due Tuesday, September 15th
+# Assignment 1: due Tuesday, September 15th  
+
+---  
 
 ## Installing R  
 View the documentation and install R by clicking [**here.**](https://www.r-project.org/)  
@@ -63,6 +65,8 @@ View the documentation for `table()` by clicking [**here.**](https://www.rdocume
 View the documentation for `nrow()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/nrow)  
 
 # Assignment 2: due Tuesday, October 13th  
+
+---  
 
 ## 1. The BRFSS Codebook: Height  
 
@@ -148,6 +152,8 @@ View the documentation for `round()` by clicking [**here.**](https://www.rdocume
 
 # Assignment 3: due Tuesday, October 27th  
 
+---  
+
 ## 1. Respondent Sex: Creating a factor  
 
 The Behavioral Risk Factor Surveillance Survey (BRFSS) data in the `brtri` dataframe have a codebook with the following information:  
@@ -193,6 +199,8 @@ View the documentation for `head()` by clicking [**here.**](https://www.rdocumen
 Use the `head()` function to view the first rows of the `HEIGHTtotm` and `HTM4` columns in the `brtri` dataframe.   
 
 # Assignment 4: due Tuesday, November 17th  
+
+---  
 
 ## 1. The BRFSS Codebook: Weight  
 
