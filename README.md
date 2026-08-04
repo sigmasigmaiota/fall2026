@@ -64,7 +64,7 @@ View the documentation for `nrow()` by clicking [**here.**](https://www.rdocumen
 
 # Assignment 2: due Tuesday, October 13th  
 
-## 9. The BRFSS Codebook: Height  
+## 1. The BRFSS Codebook: Height  
 
 The Behavioral Risk Factor Surveillance Survey (BRFSS) data in the `brtri` dataframe have a codebook with the following information:  
 
@@ -93,7 +93,7 @@ What range of values would you say are in centimeters?
 View the documentation for `table()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/table)  
 
 
-## 10. Extracting height: feet, inches  
+## 2. Extracting height: feet, inches  
 
 According to the information in the BRFSS codebook, values from 200 to 711 in the `HEIGHT3` column represent height in feet and inches.  
 For example, the value '511' actually represents a height of 5 feet and 11 inches.  
@@ -110,13 +110,13 @@ You can use Stack Overflow as a resource on conditional methods with logical ind
 View the documentation for `substr()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/substr)  
 
 
-## 11. Transforming height: total inches  
+## 3. Transforming height: total inches  
 
 Create a new column called `HEIGHTtotin` and populate it with values in total inches using column operations and the new `HEIGHTft` and `HEIGHTin` columns we just created.  
 You should be able to create the column and populated it with values in a single line of code.  
 
 
-## 12. Extracting height: centimeters  
+## 4. Extracting height: centimeters  
 
 1. Create a new column called `HEIGHTcm` and populate it with `NA` values.  
 2. Extract the height of each respondent recorded in centimeters from the `HEIGHT3` column conditionally--only if `brtri$HEIGHT3>=9061 & brtri$HEIGHT3<=9998`.  
@@ -125,7 +125,7 @@ You should be able to create the column and populated it with values in a single
 5. When subsetting columns, `NA` values are not allowed, so remember to include `!is.na(brtri$HEIGHT3)` in the logical indexing.  
 
 
-## 13. Transforming height: total centimeters  
+## 5. Transforming height: total centimeters  
 
 1. Create a new column called `HEIGHTtotcm` by simply copying the column `brtri$HEIGHTcm`.
    This new column `HEIGHTtotcm` will hold the height of each respondent in centimeters.
@@ -135,20 +135,20 @@ You should be able to create the column and populated it with values in a single
 View the documentation for `round()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/Round)  
 
 
-## 14. Transforming height: total meters  
+## 6. Transforming height: total meters  
 
 1. Create a new column called `HEIGHTtotm` by simply converting the column `brtri$HEIGHTtotcm` to meters.  
 2. Use the `round()` function to round values to four decimal places.  
 
 
-## 15. Transforming height: total centimeters to total inches  
+## 7. Transforming height: total centimeters to total inches  
 
 1. Create a new column called `HEIGHTtotin` by simply converting the column `brtri$HEIGHTtotcm` to inches.  
 2. Use the `round()` function to round values to the nearest whole inch.  
 
 # Assignment 3: due Tuesday, October 27th  
 
-## 16. Respondent Sex: Creating a factor  
+## 1. Respondent Sex: Creating a factor  
 
 The Behavioral Risk Factor Surveillance Survey (BRFSS) data in the `brtri` dataframe have a codebook with the following information:  
 
@@ -174,27 +174,27 @@ Question:  Sex of Respondent
 View the documentation for `factor()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/factor)  
 
 
-## 17. Plotting an histogram of (unweighted) height stratified by sex  
+## 2. Plotting an histogram of (unweighted) height stratified by sex  
 
 View the documentation for `ggplot()` by clicking [**here.**](https://www.rdocumentation.org/packages/ggplot2/versions/0.9.0/topics/ggplot)  
 View the documentation for `geom_histogram()` by clicking [**here.**](https://www.rdocumentation.org/packages/ggplot2/versions/0.9.1/topics/geom_histogram)  
 View a gallery of R code and histograms with several groups by clicking [**here.**](https://r-graph-gallery.com/histogram_several_group.html)  
 
 
-## 18. Compare our calculated `HEIGHTtotin` column values to BRFSS height column values in inches  
+## 3. Compare our calculated `HEIGHTtotin` column values to BRFSS height column values in inches  
 
 Use the `head()` function to view the first rows of the `HEIGHTtotin` and `HTIN4` columns in the `brtri` dataframe.  
 
 View the documentation for `head()` by clicking [**here.**](https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/head)  
 
 
-## 19. Compare our calculated `HEIGHTtotm` column values to BRFSS height column values in meters  
+## 4. Compare our calculated `HEIGHTtotm` column values to BRFSS height column values in meters  
 
 Use the `head()` function to view the first rows of the `HEIGHTtotm` and `HTM4` columns in the `brtri` dataframe.   
 
 # Assignment 4: due Tuesday, November 17th  
 
-## 20. The BRFSS Codebook: Weight  
+## 1. The BRFSS Codebook: Weight  
 
 The Behavioral Risk Factor Surveillance Survey (BRFSS) data in the `brtri` dataframe have a codebook with the following information:  
 
@@ -222,7 +222,7 @@ Given the information in the table above, what range of values would you say are
 What range of values within the column `WEIGHT2` are recorded in kilograms?  
 
 
-## 21. Extracting weight: pounds  
+## 2. Extracting weight: pounds  
 
 1. Create a new column called `WEIGHTlb` and populate it with `NA` values.  
 2. Extract the weight of each respondent recorded in pounds from the `WEIGHT2` column conditionally--only if `brtri$WEIGHT2>=50 & brtri$WEIGHT2<=776`.  
@@ -233,7 +233,7 @@ Remember that the last three digits of the `WEIGHT2` column represent respondent
 When subsetting columns, `NA` values are not allowed, so remember to include `!is.na(brtri$WEIGHT2)` in the logical indexing.  
 
 
-## 22. Extracting weight: kilograms  
+## 3. Extracting weight: kilograms  
 
 1. Create a new column called `WEIGHTkg` and populate it with `NA` values.  
 2. Extract the weight of each respondent recorded in kilograms from the `WEIGHT2` column conditionally--only if `brtri$WEIGHT2>=9023 & brtri$WEIGHT2<=9352`.  
@@ -244,7 +244,7 @@ Remember that the last three digits of the `WEIGHT2` column represent respondent
 When subsetting columns, `NA` values are not allowed, so remember to include `!is.na(brtri$WEIGHT2)` in the logical indexing.  
 
 
-## 23. Compare our calculated `WEIGHTkg` column values to BRFSS weight column values  
+## 4. Compare our calculated `WEIGHTkg` column values to BRFSS weight column values  
 
 The Behavioral Risk Factor Surveillance Survey (BRFSS) data in the `brtri` dataframe have a codebook with the following information:  
 
@@ -274,12 +274,12 @@ Use the `head()` function to view the first rows of the `WEIGHTlb`, `WEIGHTkg`, 
 Based on what you see, how do the values of the column `WEIGHTkg` compare to the column `WTKG3`?  
 
 
-## 24. Calculate BMI for each respondent from `WEIGHTkg` and `HEIGHTtotm`  
+## 5. Calculate BMI for each respondent from `WEIGHTkg` and `HEIGHTtotm`  
 
 From respondent weight in kilograms and height in meters, create a new column `BMIall` by calculating BMI in kilograms per meters squared.  
 
 
-## 25. Compare our calculated `BMIall` column values to BRFSS BMI column values  
+## 6. Compare our calculated `BMIall` column values to BRFSS BMI column values  
 
 The Behavioral Risk Factor Surveillance Survey (BRFSS) data in the `brtri` dataframe have a codebook with the following information:  
 
