@@ -11,17 +11,20 @@ CRAN is a trusted source for up-to-date, consistent versions of R packages, and 
 
 
 # 1. Using `install.packages()`  
+
 One of the most useful packages in R is `tidyverse`.  
 The `install.packages()` function is the easiest method to download packages from CRAN.  
 View the documentation for `install.packages()` by clicking [**here.**](https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/install.packages)  
 
 
 # 2. The `library()` function  
+
 Once the package is downloaded, the package must be called into virtual memory before it is used. In order to use the package, call it into virtual memory with the `library()` command.  
 When downloading packages, the package name must be in quotation marks. When called into virtual memory with the `library()` command, no quotation marks are needed.  
 
 
 # 3. Viewing package version with `packageVersion()`  
+
 In an R Markdown document, you can begin a new code chunk by adding three tick marks followed by a lower case r enclosed in curly brackets: ` ```{r} `  
 
 Close the code chunk by typing three tick marks: ` ``` `.  
@@ -29,29 +32,35 @@ View the documentation for `packageVersion()` by clicking [**here.**](https://ww
 
 
 # 4. Importing a .csv file with `read.csv`  
+
 Hint: include the file path when reading the file, and remember to either double backslashes (`\`) or use forward slashes (`/`) in the file path.  
 View the documentation for `read.csv()` by clicking [**here.**](https://www.rdocumentation.org/packages/COVID19/versions/2.0.3/topics/read.csv)  
 
 
 # 5. The `colnames()` function  
+
 How many columns are in the dataframe?  
 View the documentation for `colnames()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/row+colnames)  
 View additional methods for retrieving column names and details by clicking [**here.**](https://www.r-bloggers.com/2024/10/mastering-column-names-in-base-r-a-beginners-guide/)  
 
 
 # 6. Using `sapply()` to view column type  
+
 View the documentation for `sapply()` by clicking [**here.**](https://www.rdocumentation.org/packages/functools/versions/0.2.0/topics/Sapply)  
 
 
 # 7. The `table()` function  
+
 View the documentation for `table()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/table)  
 
 
 # 8. Viewing the number of rows with `nrow()`  
+
 View the documentation for `nrow()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/nrow)  
 
 
 # 9. The BRFSS Codebook: Height  
+
 The Behavioral Risk Factor Surveillance Survey (BRFSS) data in the `brtri` dataframe have a codebook with the following information:  
 
 Label: Reported Height in Feet and Inches  
@@ -80,6 +89,7 @@ View the documentation for `table()` by clicking [**here.**](https://www.rdocume
 
 
 # 10. Extracting height: feet, inches  
+
 According to the information in the BRFSS codebook, values from 200 to 711 in the `HEIGHT3` column represent height in feet and inches.  
 For example, the value '511' actually represents a height of 5 feet and 11 inches.  
 The codebook also explains that values beginning with the number '9' in the `HEIGHT3` column precede digits that represent height recorded in centimeters.  
@@ -96,11 +106,13 @@ View the documentation for `substr()` by clicking [**here.**](https://www.rdocum
 
 
 # 11. Transforming height: total inches  
+
 Create a new column called `HEIGHTtotin` and populate it with values in total inches using column operations and the new `HEIGHTft` and `HEIGHTin` columns we just created.  
 You should be able to create the column and populated it with values in a single line of code.  
 
 
 # 12. Extracting height: centimeters  
+
 1. Create a new column called `HEIGHTcm` and populate it with `NA` values.  
 2. Extract the height of each respondent recorded in centimeters from the `HEIGHT3` column conditionally--only if `brtri$HEIGHT3>=9061 & brtri$HEIGHT3<=9998`.  
 3. Use conditional methods with logical indexing and the `substr()` function to populate with the correct digits from the `HEIGHT3` column.
@@ -109,6 +121,7 @@ You should be able to create the column and populated it with values in a single
 
 
 # 13. Transforming height: total centimeters  
+
 1. Create a new column called `HEIGHTtotcm` by simply copying the column `brtri$HEIGHTcm`.
    This new column `HEIGHTtotcm` will hold the height of each respondent in centimeters.
    For rows with height recorded in inches, we will convert from inches to centimeters and populate `HEIGHTtotcm` with converted values.  
@@ -118,16 +131,19 @@ View the documentation for `round()` by clicking [**here.**](https://www.rdocume
 
 
 # 14. Transforming height: total meters  
+
 1. Create a new column called `HEIGHTtotm` by simply converting the column `brtri$HEIGHTtotcm` to meters.  
 2. Use the `round()` function to round values to four decimal places.  
 
 
 # 15. Transforming height: total centimeters to total inches  
+
 1. Create a new column called `HEIGHTtotin` by simply converting the column `brtri$HEIGHTtotcm` to inches.  
 2. Use the `round()` function to round values to the nearest whole inch.  
 
 
 # 16. Respondent Sex: Creating a factor  
+
 The Behavioral Risk Factor Surveillance Survey (BRFSS) data in the `brtri` dataframe have a codebook with the following information:  
 
 Label: Sex of Respondent  
@@ -153,22 +169,26 @@ View the documentation for `factor()` by clicking [**here.**](https://www.rdocum
 
 
 # 17. Plotting an histogram of (unweighted) height stratified by sex  
+
 View the documentation for `ggplot()` by clicking [**here.**](https://www.rdocumentation.org/packages/ggplot2/versions/0.9.0/topics/ggplot)  
 View the documentation for `geom_histogram()` by clicking [**here.**](https://www.rdocumentation.org/packages/ggplot2/versions/0.9.1/topics/geom_histogram)  
 View a gallery of R code and histograms with several groups by clicking [**here.**](https://r-graph-gallery.com/histogram_several_group.html)  
 
 
 # 18. Compare our calculated `HEIGHTtotin` column values to BRFSS height column values in inches  
+
 Use the `head()` function to view the first rows of the `HEIGHTtotin` and `HTIN4` columns in the `brtri` dataframe.  
 
 View the documentation for `head()` by clicking [**here.**](https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/head)  
 
 
 # 19. Compare our calculated `HEIGHTtotm` column values to BRFSS height column values in meters  
+
 Use the `head()` function to view the first rows of the `HEIGHTtotm` and `HTM4` columns in the `brtri` dataframe.   
 
 
 # 20. The BRFSS Codebook: Weight  
+
 The Behavioral Risk Factor Surveillance Survey (BRFSS) data in the `brtri` dataframe have a codebook with the following information:  
 
 Label: Reported Weight in Pounds  
@@ -196,6 +216,7 @@ What range of values within the column `WEIGHT2` are recorded in kilograms?
 
 
 # 21. Extracting weight: pounds  
+
 1. Create a new column called `WEIGHTlb` and populate it with `NA` values.  
 2. Extract the weight of each respondent recorded in pounds from the `WEIGHT2` column conditionally--only if `brtri$WEIGHT2>=50 & brtri$WEIGHT2<=776`.  
 3. Use conditional methods with logical indexing and the `substr()` function to populate with the correct digits from the `WEIGHT2` column.  
@@ -206,6 +227,7 @@ When subsetting columns, `NA` values are not allowed, so remember to include `!i
 
 
 # 22. Extracting weight: kilograms  
+
 1. Create a new column called `WEIGHTkg` and populate it with `NA` values.  
 2. Extract the weight of each respondent recorded in kilograms from the `WEIGHT2` column conditionally--only if `brtri$WEIGHT2>=9023 & brtri$WEIGHT2<=9352`.  
 3. Use conditional methods with logical indexing and the `substr()` function to populate with the correct digits from the `WEIGHT2` column.  
@@ -216,6 +238,7 @@ When subsetting columns, `NA` values are not allowed, so remember to include `!i
 
 
 # 23. Compare our calculated `WEIGHTkg` column values to BRFSS weight column values  
+
 The Behavioral Risk Factor Surveillance Survey (BRFSS) data in the `brtri` dataframe have a codebook with the following information:  
 
 Label: Computed Weight in Kilograms  
@@ -245,10 +268,12 @@ Based on what you see, how do the values of the column `WEIGHTkg` compare to the
 
 
 # 24. Calculate BMI for each respondent from `WEIGHTkg` and `HEIGHTtotm`  
+
 From respondent weight in kilograms and height in meters, create a new column `BMIall` by calculating BMI in kilograms per meters squared.  
 
 
 # 25. Compare our calculated `BMIall` column values to BRFSS BMI column values  
+
 The Behavioral Risk Factor Surveillance Survey (BRFSS) data in the `brtri` dataframe have a codebook with the following information:  
 
 Label: Computed body mass index  
