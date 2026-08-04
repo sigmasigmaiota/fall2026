@@ -1,4 +1,4 @@
-# Assignment 1: due Tuesday, September 15th
+# ![](/.png "")Assignment 1: due Tuesday, September 15th
 
 ## Installing R  
 View the documentation and install R by clicking [**here.**](https://www.r-project.org/)  
