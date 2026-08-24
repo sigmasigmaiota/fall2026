@@ -2,6 +2,16 @@
 
 ---  
 
+## Video Tutorials  
+[**Video 1: Introduction to R**](https://vimeo.com/1220660708?fl=ip&fe=ec&share=copy)  
+[**Video 2: The Console**](https://vimeo.com/1220660709?fl=ip&fe=ec&share=copy)  
+[**Video 3: Vectors**](https://vimeo.com/1220660711?fl=ip&fe=ec&share=copy)  
+[**Video 4: Help and Hashes**](https://vimeo.com/1220660710?fl=ip&fe=ec&share=copy)  
+[**Video 5: Errors**](https://vimeo.com/1220660719?fl=ip&fe=ec&share=copy)  
+[**Video 6: Scripts**](https://vimeo.com/1220660748?fl=ip&fe=ec&share=copy)  
+[**Video 7: Packages**](https://vimeo.com/1220660753?fl=ip&fe=ec&share=copy)  
+[**Video 8: Working with Data**](https://vimeo.com/1220660760?fl=ip&fe=ec&share=copy)
+
 ## Installing R  
 View the documentation and install R by clicking [**here.**](https://www.r-project.org/)  
 
