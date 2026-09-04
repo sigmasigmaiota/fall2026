@@ -1,0 +1,123 @@
+---
+title: "Intro to R, Assignment 1"
+geometry: margin=0.75in
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+
+library(formatR)
+knitr::opts_chunk$set(tidy = TRUE,  tidy.opts = list(width.cutoff = 50))
+
+```
+
+
+# A brief introduction to R packages  
+Packages are curated collections of functions and/or compiled code for use in R. Some commonly-downloaded, popular packages include sample data and documentation to explain and demonstrate implementation.  
+Packages can be downloaded from the Comprehensive R Archive Network (CRAN), the primary repository for R packages. Each package submitted to CRAN is reviewed and tested thoroughly before release. Every package is released with a version number, and the most popular packages are frequently updated and released with a new version number.  
+CRAN is a trusted source for up-to-date, consistent versions of R packages, and allows package accessibility across multiple servers in multiple regions called 'mirrors'. Packages can also be downloaded through GitHub, but we'll get to that later.  
+
+
+# 1. Using `install.packages()`  
+One of the most useful packages in R is `tidyverse`.  
+Install `tidyverse` by typing `install.packages('tidyverse')` in the code chunk below.  
+The `install.packages()` function is the easiest method to download packages from CRAN.  
+View the documentation for `install.packages()` by clicking [**here.**](https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/install.packages)  
+
+```{r eval=FALSE}
+
+
+
+```
+
+
+# 2. The `library()` function  
+Once the package is downloaded, the package must be called into virtual memory before it is used. In order to use the package, call it into virtual memory with the `library()` command.  
+When downloading packages, the package name must be in quotation marks. When called into virtual memory with the `library()` command, no quotation marks are needed.  
+
+Put the `tidyverse` package into virtual memory by typing `library(tidyverse)` in the code chunk below.  
+
+```{r message=FALSE, warning=FALSE}
+
+
+
+```
+
+
+# 3. Viewing package version with `packageVersion()`  
+In an R Markdown document, you can begin a new code chunk by adding three tick marks followed by a lower case r enclosed in curly brackets: ` ```{r} `  
+
+You can close the code chunk with three tick marks: ` ``` `.  
+
+Create a code chunk below and find the package version of tidyverse you've just downloaded by using the `packageVersion()` function.  
+View the documentation for `packageVersion()` by clicking [**here.**](https://www.rdocumentation.org/packages/Biobase/versions/2.32.0/topics/package.version)  
+
+```{r}
+
+
+
+```
+
+
+# 4. Importing a .csv file with `read.csv`  
+Read the .csv file titled `brfss2024tri.csv` into a dataframe with the `read.csv()` function. Name the resulting dataframe `brtri`.  
+Hint: include the file path when reading the file, and remember to either double backslashes (`\`) or use forward slashes (`/`) in the file path.  
+View the documentation for `read.csv()` by clicking [**here.**](https://www.rdocumentation.org/packages/COVID19/versions/2.0.3/topics/read.csv)  
+
+```{r}
+
+
+
+```
+
+
+# 5. The `colnames()` function  
+View the column names in the `brtri` dataframe with the `colnames()` function in the code chunk below.  
+How many columns are in the dataframe?  
+View the documentation for `colnames()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/row+colnames)  
+View additional methods for retrieving column names and details by clicking [**here.**](https://www.r-bloggers.com/2024/10/mastering-column-names-in-base-r-a-beginners-guide/)  
+
+```{r}
+
+
+
+```
+
+
+# 6. Using `sapply()` to view column type  
+View the class of each column in the `brtri` dataframe by implementing the `sapply()` function with the `class()` function in the code chunk below.  
+View the documentation for `sapply()` by clicking [**here.**](https://www.rdocumentation.org/packages/functools/versions/0.2.0/topics/Sapply)  
+
+```{r}
+
+
+
+```
+
+
+# 7. The `table()` function  
+Use the `table()` function to view the frequencies of the `STATE` column in the `brtri` dataframe in the code chunk below. Use the parameter `useNA` to view the number of rows with missing data.  
+View the documentation for `table()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/table)  
+
+```{r warning=FALSE, message=FALSE}
+
+
+
+```
+
+
+# 8. Viewing the number of rows with `nrow()`  
+Use the `nrow()` function to view the number of rows in the `brtri` dataframe in the code chunk below.  
+View the documentation for `nrow()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/nrow)  
+
+```{r}
+
+
+
+```
+
+
+
