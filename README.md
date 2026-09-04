@@ -1,4 +1,4 @@
-# Assignment 1: due Tuesday, September 15th [click here](Assignment_1_BRFSS.Rmd)  
+# Assignment 1: due Tuesday, September 15th [(_click here_)](Assignment_1_BRFSS.Rmd)  
 
 ---  
 
