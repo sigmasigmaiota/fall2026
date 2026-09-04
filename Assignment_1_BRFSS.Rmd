@@ -7,13 +7,6 @@ output:
   html_document: default
 ---
 
-```{r setup, include=FALSE}
-
-library(formatR)
-knitr::opts_chunk$set(tidy = TRUE,  tidy.opts = list(width.cutoff = 50))
-
-```
-
 
 # A brief introduction to R packages  
 Packages are curated collections of functions and/or compiled code for use in R. Some commonly-downloaded, popular packages include sample data and documentation to explain and demonstrate implementation.  
@@ -27,7 +20,7 @@ Install `tidyverse` by typing `install.packages('tidyverse')` in the code chunk 
 The `install.packages()` function is the easiest method to download packages from CRAN.  
 View the documentation for `install.packages()` by clicking [**here.**](https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/install.packages)  
 
-```{r eval=FALSE}
+```{r}
 
 
 
@@ -40,7 +33,7 @@ When downloading packages, the package name must be in quotation marks. When cal
 
 Put the `tidyverse` package into virtual memory by typing `library(tidyverse)` in the code chunk below.  
 
-```{r message=FALSE, warning=FALSE}
+```{r}
 
 
 
@@ -102,7 +95,7 @@ View the documentation for `sapply()` by clicking [**here.**](https://www.rdocum
 Use the `table()` function to view the frequencies of the `STATE` column in the `brtri` dataframe in the code chunk below. Use the parameter `useNA` to view the number of rows with missing data.  
 View the documentation for `table()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/table)  
 
-```{r warning=FALSE, message=FALSE}
+```{r}
 
 
 
