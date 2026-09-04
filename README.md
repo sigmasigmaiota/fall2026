@@ -50,6 +50,7 @@ View the documentation for `packageVersion()` by clicking [**here.**](https://ww
 ## 4. Importing a .csv file with `read.csv`  
 
 Create a folder in your local drive for BRFSS data, then download the zip file containing the data: [brfss2024tri.zip](brfss2024tri.zip)  
+These data are limited to responses collected within the tri-state area. Once the zip file is downloaded, open the zip file and copy the .csv to a location with a file path that is easy to remember.  
 Hint: include the file path when reading the file, and remember to either double backslashes (`\`) or use forward slashes (`/`) in the file path.  
 View the documentation for `read.csv()` by clicking [**here.**](https://www.rdocumentation.org/packages/COVID19/versions/2.0.3/topics/read.csv)  
 
