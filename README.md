@@ -2,7 +2,8 @@
 Download Assignment 1 (**Assignment_1_BRFSS.Rmd**, link above), add code within the marked code chunks, and submit the completed Assignment 1 (**Assignment_1_BRFSS.Rmd**) to eMedley. You'll submit the .Rmd file with your code written in the empty code chunks.  
 
 Assignment 2 will be posted for download and will include answers to Assignment 1.  
-![QR](QRCODEfall2026.png)  
+
+![QR](QRCODEfall2026.png){width=50% height=50%}  
 ---  
 
 ## Video Tutorials  
