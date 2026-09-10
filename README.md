@@ -3,7 +3,6 @@ Download Assignment 1 (**Assignment_1_BRFSS.Rmd**, link above), add code within 
 
 Assignment 2 will be posted for download and will include answers to Assignment 1.  
 
-![QR](QRCODEfall2026.png){width=50% height=50%}  
 ---  
 
 ## Video Tutorials  
