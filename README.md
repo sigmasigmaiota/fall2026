@@ -128,7 +128,7 @@ We will accomplish this step by step:
 You can use Stack Overflow as a resource on conditional methods with logical indexing by clicking [**here.**](https://stackoverflow.com/questions/13871614/replacing-values-from-a-column-using-a-condition-in-r)  
 View the documentation for `substr()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/substr)  
 
-A brief note on a technique in data cleaning known as 'conditional' or 'logical indexing':  
+A brief note on a technique in data manipulation known as 'conditional' or 'logical indexing':  
 
 > In R, an **index** refers to the position used to locate a specific piece of data within a data structure—for a dataframe, this means specifying which row and which column you want to access, since data is organized in a two-dimensional grid.  
 > In code, this indexing is expressed using square brackets in the form `dataframe_name[row, column]`.  
