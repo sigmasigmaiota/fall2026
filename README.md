@@ -128,6 +128,19 @@ We will accomplish this step by step:
 You can use Stack Overflow as a resource on conditional methods with logical indexing by clicking [**here.**](https://stackoverflow.com/questions/13871614/replacing-values-from-a-column-using-a-condition-in-r)  
 View the documentation for `substr()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/substr)  
 
+A brief note on a technique in data cleaning known as 'conditional' or 'logical indexing':  
+
+> In R, an **index** refers to the position used to locate a specific piece of data within a data structure—for a dataframe, this means specifying which row and which column you want to access, since data is organized in a two-dimensional grid.  
+> In code, this indexing is expressed using square brackets in the form `dataframe_name[row, column]`.  
+> For example, `dataframe_name[2, 3]` accesses the value in the second row and third column, while `dataframe_name[1:5, c('column1', 'column2')]` selects rows 1 through 5 for two named columns.  
+> Importantly, if you omit the row or column specification, R interprets this as "all rows" or "all columns", so `dataframe_name[, 'column1']` returns every row for `column1`, and `dataframe_name[3, ]` returns every column for row 3.  
+
+
+> **Logical indexing** extends this concept by using logical (TRUE/FALSE) conditions in place of explicit row or column numbers.  
+> Instead of specifying `dataframe_name[2, ]`, you might write `dataframe_name[dataframe_name$age > 30, ]`, which evaluates the condition for every row and returns only those where it's `TRUE`.  
+> This is especially powerful for conditional assignment: for instance, `dataframe_name$status[dataframe_name$age > 30] <- "adult"` will assign the value `"adult"` only to the rows where the age condition holds true, leaving all other rows untouched.  
+> This lets you selectively modify subsets of data without writing loops or manually identifying row numbers.  
+
 
 ## 3. Transforming height: total inches  
 
