@@ -1,4 +1,4 @@
-#### Assignment 1: due Tuesday, September 15th [(_click here_)](Assignment_1_BRFSS.Rmd)  
+#### Assignment 1: due Tuesday, September 15th  
 # Assignment 2: due Tuesday, September 22nd [(_click here_)](Assignment_2_BRFSS.Rmd)  
 Download Assignment 2 (**Assignment_2_BRFSS.Rmd**, link above), add code within the marked code chunks, and submit the completed Assignment 1 (**Assignment_2_BRFSS.Rmd**) to eMedley. You'll submit the .Rmd file with your code written in the empty code chunks.  
 
