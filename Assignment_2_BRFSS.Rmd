@@ -7,6 +7,8 @@ output:
   html_document: default
 ---
 
+Assignment 2 begins on question number 9. Questions 1-8 contain answers to Assignment 1.  
+Reach out with difficulties or questions.  
 
 # A brief introduction to R packages  
 Packages are curated collections of functions and/or compiled code for use in R. Some commonly-downloaded, popular packages include sample data and documentation to explain and demonstrate implementation.  
@@ -22,7 +24,7 @@ View the documentation for `install.packages()` by clicking [**here.**](https://
 
 ```{r eval=FALSE}
 
-install.packages('tidyverse')
+# install.packages('tidyverse')
 
 ```
 
