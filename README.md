@@ -1,5 +1,5 @@
 #### Assignment 1: due Tuesday, September 15th  
-# Assignment 2: due Tuesday, September 22nd [(_click here_)](Assignment_2_BRFSS.Rmd)  
+# Assignment 2: due Tuesday, September 29th [(_click here_)](Assignment_2_BRFSS.Rmd)  
 Download Assignment 2 (**Assignment_2_BRFSS.Rmd**, link above), add code within the marked code chunks, and submit the completed Assignment 1 (**Assignment_2_BRFSS.Rmd**) to eMedley. You'll submit the .Rmd file with your code written in the empty code chunks.  
 
 Assignment 3 will be posted for download and will include answers to Assignment 2 and Assignment 1.  
@@ -80,7 +80,7 @@ View the documentation for `table()` by clicking [**here.**](https://www.rdocume
 
 View the documentation for `nrow()` by clicking [**here.**](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/nrow)  
 
-# Assignment 2: due Tuesday, October 13th  
+# Assignment 2: due Tuesday, September 29th  
 
 ---  
 
@@ -179,7 +179,7 @@ View the documentation for `round()` by clicking [**here.**](https://www.rdocume
 1. Create a new column called `HEIGHTtotin` by simply converting the column `brtri$HEIGHTtotcm` to inches.  
 2. Use the `round()` function to round values to the nearest whole inch.  
 
-# Assignment 3: due Tuesday, October 27th  
+# Assignment 3: TBD  
 
 ---  
 
@@ -227,7 +227,7 @@ View the documentation for `head()` by clicking [**here.**](https://www.rdocumen
 
 Use the `head()` function to view the first rows of the `HEIGHTtotm` and `HTM4` columns in the `brtri` dataframe.   
 
-# Assignment 4: due Tuesday, November 17th  
+# Assignment 4: TBD  
 
 ---  
 
