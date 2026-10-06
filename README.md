@@ -1,8 +1,10 @@
 #### Assignment 1: due Tuesday, September 15th  
-# Assignment 2: due Tuesday, September 29th [(_click here_)](Assignment_2_BRFSS.Rmd)  
-Download Assignment 2 (**Assignment_2_BRFSS.Rmd**, link above), add code within the marked code chunks, and submit the completed Assignment 1 (**Assignment_2_BRFSS.Rmd**) to eMedley. You'll submit the .Rmd file with your code written in the empty code chunks.  
+#### Assignment 2: due Tuesday, September 29th  
+## Assignment 3: due Tuesday, October 13th [(_click here_)](Assignment_3_BRFSS.Rmd)  
+Download Assignment 3 (**Assignment_3_BRFSS.Rmd**, link above), add code within the marked code chunks, and submit the completed Assignment 3 (**Assignment_3_BRFSS.Rmd**) to eMedley. You'll submit the .Rmd file with your code written in the empty code chunks.  
 
 Assignment 3 will be posted for download and will include answers to Assignment 2 and Assignment 1.  
+Assignment 3 will be posted for download and will include answers to Assignments 3, 2 and 1.  
 
 ---  
 
